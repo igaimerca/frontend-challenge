@@ -1,3 +1,28 @@
 .main-container {
     flex: 5;
+    overflow-y: scroll;
+    height: 100%;
+    .header {
+        padding: 15px 1.3rem;
+        .title {
+            color: #000;
+        }
+    }
+}
+.tabs-container {
+    padding: 0 1.3rem;
+    border-bottom: 1px solid var(--border-color);
+    justify-content: start;
+    height: 40px;
+    span {
+        height: 100%;
+        margin-right: 1.4rem;
+        cursor: pointer;
+        user-select: none;
+    }
+    span.active {
+        border-bottom: 2px solid var(--purple-color);
+        color: black;
+        font-family: 'Gelion';
+    }
 }

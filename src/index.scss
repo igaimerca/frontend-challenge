@@ -1,12 +1,15 @@
 
   :root {
     --grey-color: #696d8c;
+    --text-muted-color: #A3A3C2;
     --black-color: #060213;
     --purple-color: #6837ef;
-    --green-color: #25bb87;
+    --green-color: #25BB87;
     --orange-color: #f05d23;
     --blue-color: #3e68ff;
     --border-color: #ecebf5;
+    --lightblue-color: #FAFAFC;
+    --error-color: #F25A68;
 }
 @font-face {
   font-family: "Gelion";
@@ -23,17 +26,33 @@
   src: local("Gelion Black"),
     url("./assets/fonts/Gelion/Gelion Black.woff") format("woff");
 }
-
+* {
+    font-family: 'Gelion';
+}
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: var(--grey-color);
-  font-family: "Gelion";
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden;
 }
+
+// Vertical line
+.vertical-line-container {
+    height: 56px;
+    width: 2px;
+    display: flex;
+    margin: 0 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .vertical-line {
+    height: 50%;
+    width: 100%;
+    background-color: var(--border-color);
+  }
 
 // SCROLL BAR
 ::-webkit-scrollbar {
@@ -68,7 +87,15 @@ body {
 .flex.start {
   align-items: start;
 }
-
+.text-white {
+    color: #fff;
+}
+.text-center {
+    text-align: center;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
 // FONT SIZE
 .x-small {
   font-size: 13px;
