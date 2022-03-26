@@ -20,11 +20,11 @@
 }
 
 @font-face {
-  font-family: "Gelion Black";
+  font-family: "Gelion-Medium";
   font-style: normal;
   font-weight: normal;
-  src: local("Gelion Black"),
-    url("./assets/fonts/Gelion/Gelion Black.woff") format("woff");
+  src: local("Gelion-Medium"),
+    url("./assets/fonts/Gelion/Gelion-Medium.woff") format("woff");
 }
 * {
     font-family: 'Gelion';
@@ -69,7 +69,7 @@ body {
 }
 
 .font-bold {
-  font-weight: bold;
+  font-family: 'Gelion-Medium';
 }
 
 .text-black {
