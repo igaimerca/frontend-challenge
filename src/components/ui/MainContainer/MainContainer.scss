@@ -2,7 +2,12 @@
     flex: 5;
     overflow-y: scroll;
     height: 100%;
-
+    .header {
+        padding: 15px 1.3rem;
+        .title {
+            color: #000;
+        }
+    }
 }
 .tabs-container {
     padding: 0 1.3rem;
@@ -11,8 +16,9 @@
     height: 40px;
     span {
         height: 100%;
-        margin: 0 1.4rem;
+        margin-right: 1.4rem;
         cursor: pointer;
+        user-select: none;
     }
     span.active {
         border-bottom: 2px solid var(--purple-color);
