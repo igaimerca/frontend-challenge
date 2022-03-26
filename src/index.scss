@@ -1,0 +1,88 @@
+
+  :root {
+    --grey-color: #696d8c;
+    --black-color: #060213;
+    --purple-color: #6837ef;
+    --green-color: #25bb87;
+    --orange-color: #f05d23;
+    --blue-color: #3e68ff;
+    --border-color: #ecebf5;
+}
+@font-face {
+  font-family: "Gelion";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gelion Regular"),
+    url("./assets/fonts/Gelion/Gelion Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gelion Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gelion Black"),
+    url("./assets/fonts/Gelion/Gelion Black.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--grey-color);
+  font-family: "Gelion";
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+// SCROLL BAR
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: #ddee;
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #b5b5c5;
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9595a7;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-black {
+  color: var(--black-color);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex.column {
+  flex-direction: column;
+}
+.flex.start {
+  align-items: start;
+}
+
+// FONT SIZE
+.x-small {
+  font-size: 13px;
+}
+.small {
+  font-size: 15px;
+}
+.large {
+  font-size: 17px;
+}
+.x-large {
+  font-size: 19px;
+}
+h1,
+p {
+  margin: 0;
+}
