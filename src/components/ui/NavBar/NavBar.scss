@@ -1,0 +1,58 @@
+.navbar {
+  border-bottom: 1px solid var(--border-color);
+  padding: 7px 1.3rem;
+  .search-container {
+    flex: 4;
+    .search {
+      width: 36%;
+      background-color: var(--lightblue-color);
+      margin-right: 1rem;
+      padding: 0.5rem;
+      border-radius: 2px;
+    }
+    input {
+      width: 89%;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: var(--text-muted-color);
+      font-family: "Gelion";
+    }
+    input::placeholder {
+      color: var(--text-muted-color);
+      font-family: "Gelion";
+    }
+  }
+  .profile-container {
+    flex: 2;
+    justify-content: flex-end;
+    .inner {
+      width: 9rem;
+      justify-content: space-evenly;
+      border-radius: 5px;
+      border: 1px solid var(--border-color);
+    }
+  }
+  .badge-span {
+    background-color: var(--error-color);
+    width: 16px;
+    height: auto;
+    margin-left: 2px;
+    border-radius: 3px;
+  }
+  .vertical-line-container {
+    height: 55px;
+    width: 2px;
+  }
+  .vertical-line {
+    height: 50%;
+    width: 100%;
+    background-color: var(--border-color);
+  }
+  .profile-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--purple-color);
+  }
+}
