@@ -5,7 +5,7 @@ class LineChart extends Component {
     constructor(props) {
         super(props);
 
-        let { title, data, mainColor  } = this.props;
+        let { title, data, mainColor } = this.props;
 
         this.state = {
             series: [{
@@ -14,57 +14,57 @@ class LineChart extends Component {
             }],
             options: {
                 chart: {
-                    height: 350,
                     type: 'line',
+                    fontFamily: "Gelion",
                     toolbar: {
                         show: false
-                      },
+                    },
                     zoom: {
                         enabled: false
                     }
                 },
-                // markers: {
-                //     size: [5, 7],
-                //     colors: "white",
-                //     strokeColors: mainColor,
-                //     strokeWidth: 2,
-                //     strokeOpacity: 0.6,
-                //     strokeDashArray: 0,
-                //     fillOpacity: 1,
-                //     discrete: [],
-                //     shape: "circle",
-                //     radius: 2,
-                //     offsetX: 0,
-                //     offsetY: 0,
-                //     onClick: undefined,
-                //     onDblClick: undefined,
-                //     showNullDataPoints: true,
-                //     hover: {
-                //         size: undefined,
-                //         sizeOffset: 3
-                //     }
-                // },
-                annotations: {
-                    points: [{
-                      x: "Feb",
-                      y: 30,
-                      marker: {
-                        size: 6,
-                        fillColor: '#fff',
-                        strokeColor: 'red',
-                        radius: 2,
-                        cssClass: 'apexcharts-custom-class'
-                      },
-                      label: {
-                        borderColor: '#FF4560', 
-                        offsetY: 0,
-                        style: {
-                          color: '#fff',
-                          background: '#FF4560',
-                        }
-                      }
-                    }]
-                  },
+                markers: {
+                    size: [5, 7],
+                    colors: "#fff",
+                    strokeColors: mainColor,
+                    strokeWidth: 2,
+                    strokeOpacity: 0.6,
+                    strokeDashArray: 0,
+                    fillOpacity: 1,
+                    discrete: [],
+                    shape: "circle",
+                    radius: 2,
+                    offsetX: 0,
+                    offsetY: 0,
+                    onClick: undefined,
+                    onDblClick: undefined,
+                    showNullDataPoints: true,
+                    hover: {
+                        size: undefined,
+                        sizeOffset: 3
+                    }
+                },
+                // annotations: {
+                //     points: [{
+                //       x: "Feb",
+                //       y: 30,
+                //       marker: {
+                //         size: 6,
+                //         fillColor: '#fff',
+                //         strokeColor: 'red',
+                //         radius: 2,
+                //         cssClass: 'apexcharts-custom-class'
+                //       },
+                //       label: {
+                //         borderColor: '#FF4560', 
+                //         offsetY: 0,
+                //         style: {
+                //           color: '#fff',
+                //           background: '#FF4560',
+                //         }
+                //       }
+                //     }]
+                //   },
                 dataLabels: {
                     enabled: false
                 },
@@ -73,7 +73,7 @@ class LineChart extends Component {
                     show: true,
                     lineCap: 'butt',
                     width: 2,
-                    colors:[mainColor],
+                    colors: [mainColor],
                     dashArray: 0,
                 },
                 grid: {
@@ -85,7 +85,7 @@ class LineChart extends Component {
                 xaxis: {
                     categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
                 },
-                
+
             },
 
 
@@ -93,14 +93,15 @@ class LineChart extends Component {
     }
     render() {
         return (
-            <div className="app">
+            <div className="chart-container">
                 <div className="row">
                     <div className="mixed-chart">
                         <Chart
+                            width="600" 
+                            height="260px"
                             options={this.state.options}
                             series={this.state.series}
                             type="line"
-                            width="500"
                         />
                     </div>
                 </div>
