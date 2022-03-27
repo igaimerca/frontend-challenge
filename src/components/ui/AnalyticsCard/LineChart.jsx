@@ -63,7 +63,8 @@ class LineChart extends Component {
                 },
                 xaxis: {
                     categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
-                }
+                },
+                
             },
 
 
