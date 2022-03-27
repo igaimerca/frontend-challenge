@@ -8,22 +8,22 @@ import "./MainContainer.scss";
 import Tabs from './Tabs';
 
 function MainContainer() {
-    
+
     // Hardcoded chart data
     let data = [
         {
             title: "Average response Time",
-            data: [10, 41, 35, 51, 49, 62, 69, 91],
+            data: [10, 20, 30, 40, 50],
             mainColor: "#F05D23",
         },
         {
             title: "Replies per resolution",
-            data: [10, 41, 35, 51, 49, 62, 69, 91],
+            data: [10, 20, 30, 40, 50],
             mainColor: "#3E68FF",
         },
         {
             title: "Average resolution time",
-            data: [10, 41, 35, 51, 49, 62, 69, 91],
+            data: [10, 20, 30, 40, 50],
             mainColor: "#07C9E2",
         }]
 

@@ -23,27 +23,48 @@ class LineChart extends Component {
                         enabled: false
                     }
                 },
-                markers: {
-                    size: [5, 7],
-                    colors: "white",
-                    strokeColors: mainColor,
-                    strokeWidth: 2,
-                    strokeOpacity: 0.6,
-                    strokeDashArray: 0,
-                    fillOpacity: 1,
-                    discrete: [],
-                    shape: "circle",
-                    radius: 2,
-                    offsetX: 0,
-                    offsetY: 0,
-                    onClick: undefined,
-                    onDblClick: undefined,
-                    showNullDataPoints: true,
-                    hover: {
-                        size: undefined,
-                        sizeOffset: 3
-                    }
-                },
+                // markers: {
+                //     size: [5, 7],
+                //     colors: "white",
+                //     strokeColors: mainColor,
+                //     strokeWidth: 2,
+                //     strokeOpacity: 0.6,
+                //     strokeDashArray: 0,
+                //     fillOpacity: 1,
+                //     discrete: [],
+                //     shape: "circle",
+                //     radius: 2,
+                //     offsetX: 0,
+                //     offsetY: 0,
+                //     onClick: undefined,
+                //     onDblClick: undefined,
+                //     showNullDataPoints: true,
+                //     hover: {
+                //         size: undefined,
+                //         sizeOffset: 3
+                //     }
+                // },
+                annotations: {
+                    points: [{
+                      x: "Feb",
+                      y: 30,
+                      marker: {
+                        size: 6,
+                        fillColor: '#fff',
+                        strokeColor: 'red',
+                        radius: 2,
+                        cssClass: 'apexcharts-custom-class'
+                      },
+                      label: {
+                        borderColor: '#FF4560', 
+                        offsetY: 0,
+                        style: {
+                          color: '#fff',
+                          background: '#FF4560',
+                        }
+                      }
+                    }]
+                  },
                 dataLabels: {
                     enabled: false
                 },
