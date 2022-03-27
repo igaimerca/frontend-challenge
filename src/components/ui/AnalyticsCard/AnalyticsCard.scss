@@ -3,7 +3,7 @@
     height: 100%;
     border: 1px solid var(--border-color);
     border-radius: 6px;
-    padding: 15px 1.3rem;
+    padding: 3px 1.3rem;
     margin: 1.2rem 0;
     .percent {
         padding: 0.2rem 0.4rem;
@@ -16,10 +16,36 @@
         height: 10px;
         width: 10px;
         border-radius: 1px;
-        margin-right: 0.2rem;
+        margin-right: 0.3rem;
+    }
+    .left {
+        flex: 4;
+        border-right: 1px solid var(--border-color);
+        .header {
+            padding: 0 1rem;
+        }
+    }
+    .right {
+        flex: 1;
+    }
+}
+#filter-btn {
+    background-color: #fff;
+    color: #000;
+    margin: 0 .4rem;
+    font-family: 'Gelion-Medium';
+    border: 1px solid var(--border-color);
+    span {
+        margin-right: .5rem;
+    }
+    path {
+        fill: #000;
+    }
+    &:hover {
+        background-color: var(--lightblue-color);
     }
 }
 .chart-container {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
