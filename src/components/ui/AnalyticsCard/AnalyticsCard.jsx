@@ -29,7 +29,7 @@ function AnalyticsTab({ chartData }) {
                 <LineChart data={chartData.data} mainColor={chartData.mainColor} title={chartData.title} />
             </div>
             <div className="right">
-
+                <div className="chart-average-card"></div>
             </div>
         </div>
     )
