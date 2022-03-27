@@ -97,7 +97,7 @@ class LineChart extends Component {
                 <div className="row">
                     <div className="mixed-chart">
                         <Chart
-                            width="600" 
+                            width="100%" 
                             height="260px"
                             options={this.state.options}
                             series={this.state.series}
