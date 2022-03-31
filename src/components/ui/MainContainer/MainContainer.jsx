@@ -17,16 +17,54 @@ function MainContainer() {
             title: "Average response Time",
             data: [12, 26, 20, 32, 18, 30, 41, 26],
             mainColor: "#F05D23",
+            statistics: [
+                {
+                    title: "Average response Time",
+                    time: "30 Mins"
+                }, {
+                    title: "Response Time",
+                    time: "1 Hour 30 Mins"
+                }
+            ]
         },
         {
             title: "Replies per resolution",
             data: [12, 26, 20, 32, 18, 30, 41, 26],
             mainColor: "#3E68FF",
+            statistics: [
+                {
+                    title: "Average Replies",
+                    time: "30 Mins"
+                }, {
+                    title: "Response Time",
+                    time: "1 Hour 30 Mins"
+                }
+            ]
         },
         {
             title: "Average resolution time",
             data: [12, 26, 20, 32, 18, 30, 41, 26],
+            mainColor: "#FB6491",
+            statistics: [{
+                title: "Average Resolution Rate",
+                time: "30 Mins"
+            }, {
+                title: "Response Time",
+                time: "1 Hour 30 Mins"
+            }]
+            ,
+        }, {
+            title: "First contact resolution rate",
+            data: [12, 26, 20, 32, 18, 30, 41, 26],
             mainColor: "#07C9E2",
+            statistics: [{
+                title: "Average Contact Rate",
+                time: "30 Mins"
+            }, {
+                title: "Response Time",
+                time: "1 Hour 30 Mins"
+            }]
+
         }]
 
     let filterOptions = [
@@ -55,8 +93,8 @@ function MainContainer() {
                         </div>
                     </div>
                     <div className="analytics-cards">
-                        {data && data.map((content) => (
-                            <AnalyticsCard chartData={content} />
+                        {data && data.map((content, index) => (
+                            <AnalyticsCard key={index} chartData={content} />
                         ))}
                     </div>
                 </div>

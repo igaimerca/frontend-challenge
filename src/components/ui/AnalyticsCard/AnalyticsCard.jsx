@@ -19,8 +19,8 @@ function AnalyticsTab({ chartData }) {
                             <span className="text-black">High Priority</span>
                         </div>
                         <div className="vertical-line-container">
-                                <div className="vertical-line"></div>
-                            </div>
+                            <div className="vertical-line"></div>
+                        </div>
                         <button className="flex btn" id='filter-btn'>
                             <span>This Month</span>
                             {Icons.BriefCase}
@@ -30,8 +30,9 @@ function AnalyticsTab({ chartData }) {
                 <LineChart data={chartData.data} mainColor={chartData.mainColor} title={chartData.title} />
             </div>
             <div className="right">
-                <ChartAverageCard />
-                <ChartAverageCard />
+                {chartData.statistics && chartData.statistics.map((statistic, index) => (
+                    <ChartAverageCard key={index} title={statistic.title} time={statistic.time} />
+                ))}
             </div>
         </div>
     )

@@ -96,6 +96,7 @@ body {
 .cursor-pointer {
     cursor: pointer;
 }
+
 // FONT SIZE
 .x-small {
   font-size: 13px;
@@ -109,10 +110,17 @@ body {
 .x-large {
   font-size: 19px;
 }
+
+// OTHER
+ul {
+    list-style-type: none;
+}
 h1,
 p {
   margin: 0;
 }
+
+
 .hover:hover {
     color: var(--purple-color);
 }
