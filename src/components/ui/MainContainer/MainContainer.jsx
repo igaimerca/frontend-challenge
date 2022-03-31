@@ -29,6 +29,12 @@ function MainContainer() {
             mainColor: "#07C9E2",
         }]
 
+    let filterOptions = [
+        { value: 'Option1', label: 'Option1' },
+        { value: 'Option2', label: 'Option2' },
+        { value: 'Option3', label: 'Option3' },
+    ]
+
     return (
         <div className="main-container">
             <NavBar />
@@ -40,11 +46,11 @@ function MainContainer() {
                         <div className="flex">
                             <Search />
                             <div className="flex">
-                                <SelectInput />
+                                <SelectInput options={filterOptions} placeholder="Filter Options" />
                                 <div className="vertical-line-container">
                                     <div className="vertical-line"></div>
                                 </div>
-                                <Button />
+                                <Button text="Export" />
                             </div>
                         </div>
                     </div>

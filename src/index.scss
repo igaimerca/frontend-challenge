@@ -7,7 +7,7 @@
     --green-color: #25BB87;
     --orange-color: #f05d23;
     --blue-color: #3e68ff;
-    --border-color: #ecebf5;
+    --lightgrey-color: #ecebf5;
     --lightblue-color: #FAFAFA;
     --error-color: #F25A68;
 }
@@ -51,7 +51,7 @@ body {
   .vertical-line {
     height: 50%;
     width: 100%;
-    background-color: var(--border-color);
+    background-color: var(--lightgrey-color);
   }
 
 // SCROLL BAR

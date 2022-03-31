@@ -1,8 +1,9 @@
 import React from 'react'
+import "./ChartAverageCard.scss";
 
 function ChartAverageCard() {
     return (
-        <div>
+        <div className="chart-average-card">
             ChartAverageCard
         </div>
     )
