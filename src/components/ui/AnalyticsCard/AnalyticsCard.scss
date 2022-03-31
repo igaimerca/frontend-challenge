@@ -1,9 +1,9 @@
 .analytics-card {
     width: 96.4%;
     height: 100%;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--lightgrey-color);
     border-radius: 6px;
-    padding: 3px 1.3rem;
+    padding: 3px 0;
     margin: 1.2rem 0;
     .percent {
         padding: 0.2rem 0.4rem;
@@ -20,13 +20,19 @@
     }
     .left {
         flex: 4;
-        border-right: 1px solid var(--border-color);
+        border-right: 1px solid var(--lightgrey-color);
         .header {
             padding: 0 1rem;
         }
     }
     .right {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
         flex: 1;
+        height: 100%;
     }
 }
 #filter-btn {
@@ -34,7 +40,7 @@
     color: #000;
     margin: 0 .4rem;
     font-family: 'Gelion-Medium';
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--lightgrey-color);
     span {
         margin-right: .5rem;
     }

@@ -1,11 +1,11 @@
 import React from 'react'
 import "./Button.scss";
 
-function Button() {
+function Button({text}) {
   return (
     <div>
         <button className="btn">
-            Export
+            {text}
         </button>
     </div>
   )

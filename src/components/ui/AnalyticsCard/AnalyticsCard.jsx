@@ -2,6 +2,7 @@ import React from 'react'
 import "./AnalyticsCard.scss";
 import LineChart from './LineChart';
 import Icons from "../../../assets/icons/index";
+import ChartAverageCard from "../ChartAverageCard/ChartAverageCard";
 
 function AnalyticsTab({ chartData }) {
     return (
@@ -29,7 +30,8 @@ function AnalyticsTab({ chartData }) {
                 <LineChart data={chartData.data} mainColor={chartData.mainColor} title={chartData.title} />
             </div>
             <div className="right">
-                <div className="chart-average-card"></div>
+                <ChartAverageCard />
+                <ChartAverageCard />
             </div>
         </div>
     )
