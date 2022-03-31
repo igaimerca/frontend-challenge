@@ -19,16 +19,36 @@
       padding-right: 3rem;
     }
   }
+  .sidebar-item.active .link-hover {
+    color: var(--purple-color);
+    font-weight: 600;
+    .icon {
+      path {
+        fill: var(--purple-color);
+      }
+    }
+  }
+  .active-child-item {
+    color: #000;
+  }
   // HOVER
   .link-hover {
     cursor: pointer;
     &:hover {
-        color: var(--purple-color);
-       .icon {
+      color: var(--purple-color);
+      .icon {
         path {
           fill: var(--purple-color);
         }
       }
     }
+  }
+  .child-list-items ul {
+    margin-top: 0;
+  }
+  .child-list-items li {
+    cursor: pointer;
+    margin: 0.7rem 0;
+    user-select: none;
   }
 }

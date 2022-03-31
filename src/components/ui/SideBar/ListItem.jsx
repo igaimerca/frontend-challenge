@@ -1,9 +1,9 @@
 import React from 'react'
 import Icons from '../../../assets/icons'
 
-function ListItem({ icon, text, chidren }) {
+function ListItem({ icon, text, children, active, changeActiveItem }) {
     return (
-        <div className="sidebar-item">
+        <div className={`sidebar-item ${active ? 'active' : ''}`}>
             <div className="flex small link-hover">
                 <div className="flex">
                     <span className="icon">
@@ -16,7 +16,7 @@ function ListItem({ icon, text, chidren }) {
                 </span>
             </div>
             <div className="flex">
-                {chidren}
+                {children}
             </div>
         </div>
     )
