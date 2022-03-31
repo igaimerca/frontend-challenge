@@ -30,8 +30,8 @@ function AnalyticsTab({ chartData }) {
                 <LineChart data={chartData.data} mainColor={chartData.mainColor} title={chartData.title} />
             </div>
             <div className="right">
-                {chartData.statistics && chartData.statistics.map((statistic) => (
-                    <ChartAverageCard title={statistic.title} time={statistic.time} />
+                {chartData.statistics && chartData.statistics.map((statistic, index) => (
+                    <ChartAverageCard key={index} title={statistic.title} time={statistic.time} />
                 ))}
             </div>
         </div>

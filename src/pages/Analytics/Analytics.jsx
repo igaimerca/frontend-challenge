@@ -5,7 +5,7 @@ import "./Analytics.scss"
 
 function Analytics() {
   return (
-    <div className="flex analytics start">
+    <div className="flex start analytics">
         <SideBar />
         <MainContainer />
     </div>

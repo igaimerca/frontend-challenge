@@ -18,7 +18,9 @@ export default function SideBar() {
                 <ListItem icon={Icons.Checkmark} text="Train SAM" />
                 <ListItem icon={Icons.BriefCase} text="Agent Inbox" />
                 <ListItem icon={Icons.Help} text="Help Center" />
-                <ListItem icon={Icons.Analytics} text="Analytics" />
+                <ListItem icon={Icons.Analytics} text="Analytics">
+                    <h1>chidren here</h1>
+                </ListItem>
             </div>
         </div>
     )

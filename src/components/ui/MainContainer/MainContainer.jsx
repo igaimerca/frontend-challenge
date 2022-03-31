@@ -93,8 +93,8 @@ function MainContainer() {
                         </div>
                     </div>
                     <div className="analytics-cards">
-                        {data && data.map((content) => (
-                            <AnalyticsCard chartData={content} />
+                        {data && data.map((content, index) => (
+                            <AnalyticsCard key={index} chartData={content} />
                         ))}
                     </div>
                 </div>
