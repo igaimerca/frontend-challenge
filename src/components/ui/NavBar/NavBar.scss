@@ -4,17 +4,17 @@
   .search-container {
     flex: 4;
     .search {
-      width: 36%;
+      width: 48.3%;
       background-color: var(--lightblue-color);
       margin-right: 1rem;
-      padding: 0.5rem;
-      border-radius: 2px;
+      padding: 0.4rem 0.6rem;
+      border-radius: 10px;
     }
     input {
       width: 89%;
       border: none;
       outline: none;
-      height: 54px;
+      height: 40px;
       background: transparent;
       color: var(--text-muted-color);
       font-family: "Gelion";

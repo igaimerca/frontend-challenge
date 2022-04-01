@@ -1,5 +1,5 @@
 .sidebar {
-  padding: 1.2rem;
+  padding: 1.1rem;
   border-right: 1px solid #ecebf5;
   flex: 1;
   height: 100%;
@@ -15,13 +15,16 @@
   .sidebar-item {
     margin: 1.3rem 0;
     .item-name {
+      user-select: none;
       padding-left: 1.3rem;
       padding-right: 3rem;
     }
   }
   .sidebar-item.active .link-hover {
     color: var(--purple-color);
-    font-weight: 600;
+    .item-name {
+      font-family: "Gelion-Medium";
+    }
     .icon {
       path {
         fill: var(--purple-color);
@@ -30,6 +33,7 @@
   }
   .active-child-item {
     color: #000;
+    font-family: "Gelion-Medium";
   }
   // HOVER
   .link-hover {

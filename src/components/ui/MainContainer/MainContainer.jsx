@@ -79,8 +79,8 @@ function MainContainer() {
             <Tabs activeTab={activeTab} changeTab={(tab) => setActiveTab(tab)} />
             {activeTab == "efficiency" ? (
                 <div className="content">
-                    <div className="header flex">
-                        <h2 className="title">Efficiency Analytics</h2>
+                    <div className="header chart-preheader flex">
+                        <h2 className="title text-bold">Efficiency Analytics</h2>
                         <div className="flex">
                             <Search />
                             <div className="flex">

@@ -1,57 +1,57 @@
 .analytics-card {
-    width: 100%;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--lightgrey-color);
+  border-radius: 6px;
+  margin-bottom: 1.6rem;
+  .percent {
+    padding: 0.2rem 0.4rem;
+    background-color: #25bb871a;
+    color: var(--green-color);
+    font-family: 'Gelion-Medium';
+    border-radius: 5px;
+    margin-left: 0.6rem;
+  }
+  .color-rect {
+    height: 10px;
+    width: 10px;
+    border-radius: 1px;
+    margin-right: 0.3rem;
+  }
+  .left {
+    flex: 3.5;
+    border-right: 1px solid var(--lightgrey-color);
+    .header {
+      padding: 0 1rem;
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
     height: 100%;
-    border: 1px solid var(--lightgrey-color);
-    border-radius: 6px;
-    padding: 3px 0;
-    margin: 1.2rem 0;
-    .percent {
-        padding: 0.2rem 0.4rem;
-        background-color: #25BB871A;
-        color: var(--green-color);
-        border-radius: 5px;
-        margin-left: 0.6rem;
-    }
-    .color-rect {
-        height: 10px;
-        width: 10px;
-        border-radius: 1px;
-        margin-right: 0.3rem;
-    }
-    .left {
-        flex: 4;
-        border-right: 1px solid var(--lightgrey-color);
-        .header {
-            padding: 0 1rem;
-        }
-    }
-    .right {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        flex: 1;
-        height: 100%;
-    }
+  }
 }
 #filter-btn {
-    background-color: #fff;
-    color: #000;
-    margin: 0 .4rem;
-    font-family: 'Gelion-Medium';
-    border: 1px solid var(--lightgrey-color);
-    span {
-        margin-right: .5rem;
-    }
-    path {
-        fill: #000;
-    }
-    &:hover {
-        background-color: var(--lightblue-color);
-    }
+  background-color: #fff;
+  color: #000;
+  margin: 0 0.4rem;
+  font-family: "Gelion-Medium";
+  border: 1px solid var(--lightgrey-color);
+  span {
+    margin-right: 0.5rem;
+  }
+  path {
+    fill: #000;
+  }
+  &:hover {
+    background-color: var(--lightblue-color);
+  }
 }
 .chart-container {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }

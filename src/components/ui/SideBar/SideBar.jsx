@@ -50,7 +50,7 @@ export default function SideBar() {
                         active={activeItem === 'help' && true}
                     />
                 </div>
-                <div onClick={() => setActiveItem('analytics')}>
+                <div onClick={() => setActiveItem(activeItem === 'analytics' ? null : 'analytics')}>
                     <ListItem
                         icon={Icons.Analytics}
                         active={activeItem === 'analytics' && true}
@@ -58,18 +58,18 @@ export default function SideBar() {
                         {activeItem === 'analytics' && (
                             <div className="flex column child-list-items">
                                 <ul>
-                                    <li 
-                                    onClick={() => setActiveChildItem('teams')}
-                                    className={`${activeChildItem === 'teams' && 'active-child-item'}`}>Teams</li>
-                                    <li 
-                                    onClick={() => setActiveChildItem('knowledge')}
-                                    className={`${activeChildItem === 'knowledge' && 'active-child-item'}`}>Knowledge Base</li>
-                                    <li 
-                                    onClick={() => setActiveChildItem('training')}
-                                    className={`${activeChildItem === 'training' && 'active-child-item'}`}>Training SAM</li>
-                                    <li 
-                                    onClick={() => setActiveChildItem('help')}
-                                    className={`${activeChildItem === 'help' && 'active-child-item'}`}>Help Center</li>
+                                    <li
+                                        onClick={() => setActiveChildItem('teams')}
+                                        className={`${activeChildItem === 'teams' && 'active-child-item'}`}>Teams</li>
+                                    <li
+                                        onClick={() => setActiveChildItem('knowledge')}
+                                        className={`${activeChildItem === 'knowledge' && 'active-child-item'}`}>Knowledge Base</li>
+                                    <li
+                                        onClick={() => setActiveChildItem('training')}
+                                        className={`${activeChildItem === 'training' && 'active-child-item'}`}>Training SAM</li>
+                                    <li
+                                        onClick={() => setActiveChildItem('help')}
+                                        className={`${activeChildItem === 'help' && 'active-child-item'}`}>Help Center</li>
                                 </ul>
                             </div>
                         )}

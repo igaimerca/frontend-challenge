@@ -1,7 +1,7 @@
 import React from 'react'
 import Icons from '../../../assets/icons'
 
-function ListItem({ icon, text, children, active, changeActiveItem }) {
+function ListItem({ icon, text, children, active }) {
     return (
         <div className={`sidebar-item ${active ? 'active' : ''}`}>
             <div className="flex small link-hover">
@@ -12,7 +12,7 @@ function ListItem({ icon, text, children, active, changeActiveItem }) {
                     <span className="item-name">{text}</span>
                 </div>
                 <span>
-                    {Icons.ChevronRight}
+                    {active ? Icons.ChevronDown : Icons.ChevronRight}
                 </span>
             </div>
             <div className="flex">
