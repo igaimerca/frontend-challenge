@@ -6,7 +6,7 @@ function ChartAverageCard({title, time}) {
         <div className="chart-average-card flex">
             <div className="content flex column">
                 <p>{title}</p>
-                <b className="text-black x-large">{time}</b>
+                <b className="time text-black x-large">{time}</b>
             </div>
         </div>
     )

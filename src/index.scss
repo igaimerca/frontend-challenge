@@ -37,6 +37,7 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 // Vertical line
@@ -68,8 +69,9 @@ body {
   background: #9595a7;
 }
 
-.font-bold {
+.text-bold {
   font-family: 'Gelion-Medium';
+  font-weight: normal;
 }
 
 .text-black {
@@ -120,7 +122,14 @@ p {
   margin: 0;
 }
 
-
+input::placeholder {
+    color: var(--text-muted-color);
+}
 .hover:hover {
     color: var(--purple-color);
+}
+.apexcharts-text tspan {
+    font-family: inherit;
+    font-size: 14.2px;
+    fill: var(--grey-color);
 }

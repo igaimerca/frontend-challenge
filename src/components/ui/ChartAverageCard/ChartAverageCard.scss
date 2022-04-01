@@ -1,16 +1,22 @@
 .chart-average-card {
-    height: 136px;
-    width: 84%;
-    background-color: var(--lightblue-color);
-    border: 1px solid var(--lightgrey-color);
-    border-radius: 5px;
-    .content {
-        justify-content: start;
-        align-items: start;
-        margin: 0 auto;
-        width: 95%;
-        p {
-            margin-bottom: .5rem;
-        }
+  height: 136px;
+  width: 84%;
+  background-color: var(--lightblue-color);
+  border: 1px solid var(--lightgrey-color);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  .time  {
+    font-size: 20px;
+    font-family: "Gelion-Medium";
+    font-weight: 100;
+  }
+  .content {
+    justify-content: start;
+    align-items: start;
+    margin: 0 auto;
+    width: 83%;
+    p {
+      margin-bottom: 0.5rem;
     }
+  }
 }
