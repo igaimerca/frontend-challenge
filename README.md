@@ -2,7 +2,7 @@
   <h3 align="center">Frontend Worksample</h3>
 
   <p align="center">
-        Built with React + Sass
+        Built with React + Sass + CSS3
   </p>
 </div>
 
