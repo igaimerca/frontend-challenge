@@ -133,3 +133,10 @@ input::placeholder {
     font-size: 14.2px;
     fill: var(--grey-color);
 }
+
+// Responsiveness
+@media screen and (max-width: 1151px) {
+    .analytics {
+        display: none;
+    }
+}
