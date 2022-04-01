@@ -1,5 +1,5 @@
 <div align="center">
-  <h3 align="center">Metacare frontend challenge</h3>
+  <h3 align="center">Frontend Worksample</h3>
 
   <p align="center">
         Built with React + Sass
