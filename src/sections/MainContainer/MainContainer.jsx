@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import AnalyticsCard from '../../components/ui/AnalyticsCard/AnalyticsCard';
 import Button from '../../components/ui/Button/Button';
+import MainContainerTabs from '../../components/ui/MainContainerTabs/MainContainerTabs';
 import NavBar from '../../components/ui/NavBar/NavBar';
 import Search from '../../components/ui/Search/Search';
 import SelectInput from '../../components/ui/SelectInput/SelectInput';
 import "./MainContainer.scss";
-import Tabs from './Tabs';
 
 function MainContainer() {
 
@@ -76,7 +76,7 @@ function MainContainer() {
     return (
         <div className="main-container">
             <NavBar />
-            <Tabs activeTab={activeTab} changeTab={(tab) => setActiveTab(tab)} />
+            <MainContainerTabs activeTab={activeTab} changeTab={(tab) => setActiveTab(tab)} />
             {activeTab == "efficiency" ? (
                 <div className="content">
                     <div className="header chart-preheader flex">
