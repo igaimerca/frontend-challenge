@@ -1,7 +1,9 @@
 import React from 'react'
-import Icons from '../../assets/icons'
+import Icons from '../../../assets/icons';
 
-function ListItem({ icon, text, children, active }) {
+import "./SideBarListItem.scss";
+
+function SideBarListItem({ icon, text, children, active }) {
     return (
         <div className={`sidebar-item ${active ? 'active' : ''}`}>
             <div className="flex small link-hover">
@@ -22,4 +24,4 @@ function ListItem({ icon, text, children, active }) {
     )
 }
 
-export default ListItem
+export default SideBarListItem

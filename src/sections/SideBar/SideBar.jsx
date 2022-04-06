@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import ListItem from './ListItem';
 import "./SideBar.scss";
 import Icons from '../../assets/icons/index';
+import SideBarListItem from '../../components/ui/SideBarListItem/SideBarListItem';
 
 export default function SideBar() {
     let [activeItem, setActiveItem] = useState(null);
@@ -16,42 +16,42 @@ export default function SideBar() {
             </header>
             <div className="sidebar-items">
                 <div onClick={() => setActiveItem('admin')}>
-                    <ListItem
+                    <SideBarListItem
                         icon={Icons.User}
                         text="Admin"
                         active={activeItem === 'admin' && true}
                     />
                 </div>
                 <div onClick={() => setActiveItem('knowledge')}>
-                    <ListItem
+                    <SideBarListItem
                         icon={Icons.Checkmark}
                         text="Knowledge Base"
                         active={activeItem === 'knowledge' && true}
                     />
                 </div>
                 <div onClick={() => setActiveItem('train')}>
-                    <ListItem
+                    <SideBarListItem
                         icon={Icons.Checkmark}
                         text="Train SAM"
                         active={activeItem === 'train' && true}
                     />
                 </div>
                 <div onClick={() => setActiveItem('agent')}>
-                    <ListItem
+                    <SideBarListItem
                         icon={Icons.BriefCase}
                         text="Agent Inbox"
                         active={activeItem === 'agent' && true}
                     />
                 </div>
                 <div onClick={() => setActiveItem('help')}>
-                    <ListItem
+                    <SideBarListItem
                         icon={Icons.Help}
                         text="Help Center"
                         active={activeItem === 'help' && true}
                     />
                 </div>
                 <div onClick={() => setActiveItem('analytics')}>
-                    <ListItem
+                    <SideBarListItem
                         icon={Icons.Analytics}
                         active={activeItem === 'analytics' && true}
                         text="Analytics">
@@ -73,7 +73,7 @@ export default function SideBar() {
                                 </ul>
                             </div>
                         )}
-                    </ListItem>
+                    </SideBarListItem>
                 </div>
             </div>
         </div>
