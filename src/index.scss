@@ -132,3 +132,10 @@ input::placeholder {
     font-size: 14.2px;
     fill: var(--grey-color);
 }
+.mobile-not-supported {
+    margin: 1rem 0;
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+}
