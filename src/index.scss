@@ -1,4 +1,3 @@
-
   :root {
     --grey-color: #696d8c;
     --text-muted-color: #A3A3C2;
@@ -132,11 +131,4 @@ input::placeholder {
     font-family: inherit;
     font-size: 14.2px;
     fill: var(--grey-color);
-}
-
-// Responsiveness
-@media screen and (max-width: 1151px) {
-    .analytics {
-        display: none;
-    }
 }

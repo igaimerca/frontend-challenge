@@ -1,3 +1,5 @@
+@import "../../SCSS/mixins";
+
 .main-container {
   flex: 5;
   overflow: hidden;
@@ -22,6 +24,10 @@
     margin-right: 1.4rem;
     cursor: pointer;
     user-select: none;
+
+    @include for-big-desktop {
+        font-size: 1.19rem;
+    }
   }
   span.active {
     border-bottom: 2px solid var(--purple-color);

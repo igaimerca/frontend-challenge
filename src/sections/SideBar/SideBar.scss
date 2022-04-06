@@ -1,23 +1,42 @@
+@import "../../SCSS/mixins";
+
 .sidebar {
-  padding: 1.1rem;
-  border-right: 1px solid #ecebf5;
-  flex: 1;
-  height: 100%;
-  .header {
-    border: 1px solid #ecebf5;
-    padding: 0.7rem 0.4rem;
-    border-radius: 10px;
-  }
-  .sidebar-items {
-    margin: 1.5rem 0;
-    width: 95%;
-  }
-  .child-list-items ul {
-    margin-top: 0;
-  }
-  .child-list-items li {
-    cursor: pointer;
-    margin: 0.7rem 0;
-    user-select: none;
-  }
+    padding: 1.1rem;
+    border-right: 1px solid #ecebf5;
+    flex: 1;
+    height: 100%;
+
+    .header {
+        border: 1px solid #ecebf5;
+        padding: 0.7rem 0.4rem;
+        border-radius: 10px;
+        h1 {
+            @include for-big-desktop {
+                 font-size: 1.154rem;
+            }
+        }
+        p {
+            @include for-big-desktop {
+                 font-size: 16px;
+            }
+        }
+    }
+
+    .sidebar-items {
+        margin: 1.5rem 0;
+        width: 95%;
+    }
+
+    .child-list-items ul {
+        margin-top: 0;
+    }
+
+    .child-list-items li {
+        cursor: pointer;
+        margin: 0.7rem 0;
+        user-select: none;
+        @include for-big-desktop {
+            font-size: 1.154rem;
+        }
+    }
 }

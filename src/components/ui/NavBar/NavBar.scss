@@ -1,3 +1,5 @@
+@import "../../../SCSS/mixins";
+
 .navbar {
   border-bottom: 1px solid var(--lightgrey-color);
   padding: 7px 1.3rem;
@@ -11,13 +13,16 @@
       border-radius: 10px;
     }
     input {
-      width: 89%;
-      border: none;
-      outline: none;
-      height: 40px;
-      background: transparent;
-      color: var(--text-muted-color);
-      font-family: "Gelion";
+        width: 89%;
+        border: none;
+        outline: none;
+        height: 40px;
+        background: transparent;
+        color: var(--text-muted-color);
+        font-family: "Gelion";
+        @include for-big-desktop {
+          font-size: 1.154rem;
+      }
     }
     input::placeholder {
       color: var(--text-muted-color);

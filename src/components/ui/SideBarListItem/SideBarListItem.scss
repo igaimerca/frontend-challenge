@@ -1,35 +1,49 @@
+@import "../../../SCSS/mixins";
+
 .sidebar-item {
     margin: 1.3rem 0;
+
     .item-name {
-      user-select: none;
-      padding-left: 1.3rem;
-      padding-right: 3rem;
+        user-select: none;
+        padding-left: 1.3rem;
+        padding-right: 3rem;
+
+        @include for-big-desktop {
+            font-size: 1.19rem;
+        }
     }
-  }
-  .sidebar-item.active .link-hover {
+}
+
+.sidebar-item.active .link-hover {
     color: var(--purple-color);
+
     .item-name {
-      font-family: "Gelion-Medium";
+        font-family: "Gelion-Medium";
     }
+
     .icon {
-      path {
-        fill: var(--purple-color);
-      }
+        path {
+            fill: var(--purple-color);
+        }
     }
-  }
-  .active-child-item {
+}
+
+.active-child-item {
     color: #000;
     font-family: "Gelion-Medium";
-  }
-  // HOVER
-  .link-hover {
+}
+
+// HOVER
+.link-hover {
     cursor: pointer;
+
     &:hover {
-      color: var(--purple-color);
-      .icon {
-        path {
-          fill: var(--purple-color);
+        color: var(--purple-color);
+
+        .icon {
+            path {
+                fill: var(--purple-color);
+            }
         }
-      }
     }
-  }
+}
