@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ListItem from './ListItem';
 import "./SideBar.scss";
-import Icons from '../../../assets/icons/index';
+import Icons from '../../assets/icons/index';
 
 export default function SideBar() {
     let [activeItem, setActiveItem] = useState(null);
@@ -50,7 +50,7 @@ export default function SideBar() {
                         active={activeItem === 'help' && true}
                     />
                 </div>
-                <div onClick={() => setActiveItem(activeItem === 'analytics' ? null : 'analytics')}>
+                <div onClick={() => setActiveItem('analytics')}>
                     <ListItem
                         icon={Icons.Analytics}
                         active={activeItem === 'analytics' && true}

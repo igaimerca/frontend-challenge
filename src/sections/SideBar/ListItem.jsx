@@ -1,5 +1,5 @@
 import React from 'react'
-import Icons from '../../../assets/icons'
+import Icons from '../../assets/icons'
 
 function ListItem({ icon, text, children, active }) {
     return (

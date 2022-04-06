@@ -1,6 +1,6 @@
 import React from 'react'
-import MainContainer from '../../components/ui/MainContainer/MainContainer'
-import SideBar from '../../components/ui/SideBar/SideBar'
+import MainContainer from '../../sections/MainContainer/MainContainer'
+import SideBar from '../../sections/SideBar/SideBar'
 import "./Analytics.scss"
 
 function Analytics() {

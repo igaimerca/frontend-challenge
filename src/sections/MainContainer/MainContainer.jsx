@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import AnalyticsCard from '../AnalyticsCard/AnalyticsCard';
-import Button from '../Button/Button';
-import NavBar from '../NavBar/NavBar';
-import Search from '../Search/Search';
-import SelectInput from '../SelectInput/SelectInput';
+import AnalyticsCard from '../../components/ui/AnalyticsCard/AnalyticsCard';
+import Button from '../../components/ui/Button/Button';
+import NavBar from '../../components/ui/NavBar/NavBar';
+import Search from '../../components/ui/Search/Search';
+import SelectInput from '../../components/ui/SelectInput/SelectInput';
 import "./MainContainer.scss";
 import Tabs from './Tabs';
 
