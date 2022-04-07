@@ -9,7 +9,7 @@ function App() {
         <>
         {width < 918 ? (
             <div className="mobile-not-supported">
-                <h1>Use a desktop or laptop for better experience</h1>
+                <h1>Visit on desktop! it's worth it :D</h1>
             </div>
             ) : (
             <Analytics />
