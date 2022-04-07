@@ -1,6 +1,7 @@
 import React from "react";
+import "./MainContainerTabs.scss";
 
-function Tabs({ activeTab, changeTab }) {
+function MainContainerTabs({ activeTab, changeTab }) {
     return (
         <div className="tabs-container flex small">
             <span className={`${activeTab == "efficiency" && "active"} hover flex`}
@@ -28,4 +29,4 @@ function Tabs({ activeTab, changeTab }) {
     );
 }
 
-export default Tabs;
+export default MainContainerTabs;
